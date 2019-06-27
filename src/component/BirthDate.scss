@@ -1,0 +1,54 @@
+.react-date-picker {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 600px;
+
+  .react-date-picker__wrapper {
+    border: 0px;
+
+    .react-date-picker__inputGroup {
+      display: block;
+      text-align: center;
+
+      input {
+        &:first-child {
+          display: none;
+        }
+      }
+    }
+  }
+
+
+  input {
+    position: relative !important;
+    text-align: center;
+    width: auto !important;
+    max-width: 92px;
+
+    font-size: 30px;
+  }
+
+  .react-date-picker__inputGroup__divider {
+    position: relative;
+    top: -1px;
+    padding: 10px 0;
+  }
+
+  .react-date-picker__clear-button,
+  .react-date-picker__calendar-button {
+    display: none;
+  }
+
+  .react-date-picker__calendar {
+    top: 120% !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+
+  .react-calendar button {
+    font-size: 15px;
+  }
+}

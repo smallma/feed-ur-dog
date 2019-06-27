@@ -1,0 +1,14 @@
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.makeup .top_banner .banner_container .img_banner {
+  background: none;
+}
+
+.top_banner .banner_content .content-title,
+.top_banner .banner_content .content-info {
+  color:  #111;
+}

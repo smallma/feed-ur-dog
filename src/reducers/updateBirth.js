@@ -19,7 +19,7 @@ const UpdateBirth = (state=initState, action) => {
       console.log('action.payload.birth: ', action.payload.birth)
       return {
           ...state,
-          list: [...state.list, { birth: action.payload.birth }]
+          list: [{ birth: action.payload.birth }]
       }
 
     default:

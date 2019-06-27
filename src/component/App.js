@@ -1,6 +1,7 @@
 import React, {useCallback} from 'react';
 import {Provider, connect} from 'react-redux';
 // import {useMappedState} from 'redux-react-hook';
+import {useMappedState} from 'redux-react-hook';
 
 import TopBanner from './TopBanner'
 import BirthDate from './BirthDate'
@@ -13,6 +14,8 @@ function App() {
 
   // const birthD = useMappedState(state=> state.birthdate);
 
+  const birthGlobal = useMappedState(state=> state.updateBirth);
+
   return (
       <div className="makeup">
         <TopBanner />
@@ -20,7 +23,7 @@ function App() {
           <BirthDate />
         </div>
 
-        {/*<div>outer: {JSON.stringify(birthD.date)}</div>*/}
+        {<div>outer: {JSON.stringify(birthGlobal.list)}</div>}
       </div>
   );
 }

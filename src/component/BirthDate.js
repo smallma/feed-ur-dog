@@ -44,6 +44,7 @@ function BirthDate() {
             // dispatch({ type: 'UPDATE_BIRTH', payload: { birth: JSON.stringify(birthDate) } })
             _updateRedux(birthDate.getTime());
             setBirthD({ birth: birthDate.getTime()})
+            console.log('birthGlobal: ', birthGlobal);
           }
         }}
         value= {new Date(birthD.birth)}
